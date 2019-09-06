@@ -9,6 +9,9 @@ import androidx.databinding.Bindable
 import androidx.databinding.ObservableBoolean
 import androidx.databinding.library.baseAdapters.BR
 import com.example.mvvmkotlin.model.User
+import com.example.mvvmkotlin.view.Dashboard
+import org.jetbrains.anko.internals.AnkoInternals
+import org.jetbrains.anko.startActivity
 import java.util.*
 
 
@@ -96,10 +99,13 @@ class UserViewModel(val user: User) : Observer, BaseObservable(){
 
 //        this.email = userEmail
     //    Log.d("userViewModel","email: "+"$email")
-        Log.d("userViewModel","name: "+userName)
-        Log.d("userViewModel","number: "+number)
-        Log.d("userViewModel","pass: "+password)
-        Log.d("userViewModel","values")
+//        Log.d("userViewModel","name: "+userName)
+//        Log.d("userViewModel","number: "+number)
+//        Log.d("userViewModel","pass: "+password)
+//        Log.d("userViewModel","values")
+
+        view.context.startActivity<Dashboard>();
+
 
        // setToastMessage(successMessage, email);
 
