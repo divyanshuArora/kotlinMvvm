@@ -798,6 +798,7 @@ id image
 id info
 id invisible
 id italic
+id itemContact
 id item_touch_helper_previous_elevation
 id left
 id line1
